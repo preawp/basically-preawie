@@ -1,38 +1,72 @@
+body {
+  background-color: #fdf6f0;
+  font-family: 'Georgia', serif;
+  color: #444;
+  padding: 2rem;
+}
+
 .App {
+  max-width: 500px;
+  margin: auto;
   text-align: center;
+  background: #fffaf7;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  color: #d699b6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.log-button {
+  background-color: #f4c9d3;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.log-button:hover {
+  background-color: #f1b5c2;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  margin-top: 2rem;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
+  padding: 0;
 }
+
+li {
+  margin: 0.5rem 0;
+}
+
+input[type="text"] {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 0.8rem;
+  background: #fff2f7;
+  box-shadow: inset 0 0 6px #f0dce6;
+  outline: none;
+  color: #5c3a45;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #c6a5b2;
+}
+
